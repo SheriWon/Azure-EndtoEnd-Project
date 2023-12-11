@@ -1,0 +1,9 @@
+{
+	"name": "adf-sher-demo-01",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7a34bbb4-bc81-45db-a90e-faf942a24b7d",
+		"tenantId": "92a207e6-d307-4f26-8291-2d9423900a85"
+	}
+}
