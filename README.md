@@ -11,7 +11,7 @@ This project is building an end-to-end solution by ingesting the tables from the
 
 ## Table of Contents
 
-1. Data Pipeline Diagram
+[1. Data Pipeline Diagram](#1-data-pipeline-diagram)
 
 1. Data Ingestion	
 
@@ -23,10 +23,10 @@ This project is building an end-to-end solution by ingesting the tables from the
 
 1. Requirements
 
-## Data Pipeline Diagram
+## 1. Data Pipeline Diagram
 ![](https://github.com/SheriWon/Azure-EndtoEnd-Project/blob/main/diagram/End%20to%20End%20Azure%20Data%20architecture.JPG)
 
-## Data Ingestion
+## 2. Data Ingestion
 Using ADF pipeline extract ten tables from the On-permises SQL Server Database to Azure Data Lake Storage.
 
 * Creating all tables schema to split each table name as "SchemaName" and "TableName", eg. "SalesLT" and "Address". 
@@ -51,8 +51,8 @@ WHERE s.name = 'SalesLT';
 @activity('Look for all tables').output.value
  ```
 
-## Data Transformation
-### There are two cleaning purposes: 
+## 3. Data Transformation
+### 3.1 There are two cleaning purposes: 
 
 1. Changing data type of the "ModifiedDate" column to the correct format "yyyy-MM-dd". 
 1. Transforming each header to a clear format, such as changing 'AddressID' to 'Address_ID', to assist analysts in efficiently building the dashboard."
